@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GPTB1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.Write("nhap a vao: ");
+            double a = double.Parse(Console.ReadLine());
+            Console.Write("nhap b vao: ");
+            double b = double.Parse(Console.ReadLine());
+            if (a == 0)
+            {
+                if (b == 0)
+                    Console.WriteLine("phuong trinh có vo so nghiem;");
+                else
+                    Console.WriteLine("Phuong vo nghiem;");
+            }
+            else
+            {
+                double x = -b / a;
+                Console.WriteLine("PT co nghiem x la: " + x);
+            }
+        }
+    }
+}
